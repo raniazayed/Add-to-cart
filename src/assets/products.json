@@ -1,0 +1,12 @@
+[
+
+    {"prodId":0,"prodName":"glasses", "price":200,"category":"food","prodImage":"assets/images/glasses.jpg"},
+    {"prodId":1,"prodName":"mouse", "price":100,"category":"electronics","prodImage":"assets/images/mouse.jpg"},
+    {"prodId":2,"prodName":"airpods", "price":50,"category":"execessories","prodImage":"assets/images/airpod.jpg"},
+    {"prodId":3,"prodName":"glasses", "price":50,"category":"execessories","prodImage":"assets/images/glasses2.jpg"},
+    {"prodId":4,"prodName":"glasses", "price":50,"category":"execessories","prodImage":"assets/images/glasses2.jpg"},
+    {"prodId":5,"prodName":"glasses", "price":50,"category":"execessories","prodImage":"assets/images/glasses2.jpg"}
+
+
+    
+]

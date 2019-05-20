@@ -1,0 +1,30 @@
+
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+
+      <div *ngIf="productId" class="">
+        <img class="img-fluid" src={{product.prodImage}} alt="Card image cap"  [(ngModel)]="product.prodImage" ngDefaultControl>
+      </div>
+    </div>
+
+      <div class="col-lg-6">
+        <div>
+
+          <h5 class=""  [(ngModel)]="product.prodName" ngDefaultControl>
+            {{product.prodName}}
+          </h5>
+          <p class="" [(ngModel)]="product.category" ngDefaultControl>
+            {{product.category}}
+          </p>
+          <p class="" [(ngModel)]="product.price" ngDefaultControl>
+            {{product.price}}
+          </p>
+          <button class="btn" (click)="addtocart()"><i class="fas fa-plus-circle"></i></button>{{getCount.coun}}
+          <button   class="btn" (click)=" removeItem()"><i class="fas fa-minus-circle"></i></button>
+        <h2>{{total}}</h2>
+        </div>
+      </div>
+  </div>
+</div>

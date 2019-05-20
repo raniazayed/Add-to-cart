@@ -1,0 +1,22 @@
+@import "../../assets/sass/now-ui-kit.scss";
+
+.grey{
+    font-size: 14px;
+    color: #333
+}
+input.ng-invalid.ng-touched{
+    border: 1px solid red;
+}
+.btn{
+    background-color: #f96332;
+    color: white;
+    border-width: 2px;
+    font-weight: 400;
+    font-size: 0.8571em;
+    line-height: 1.35em;
+    margin: 10px 1px;
+    border: none;
+    border-radius: 0.1875rem;
+    padding: 11px 22px;
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+<div class="container">
+
+  <div class="row justify-content-center">
+    
+    <app-product-item *ngFor="let item of items;
+    let i = index" [id]="i" [prodItem]="item">
+    </app-product-item>
+    <!-- <app-product-item *ngFor="let item of items | filter: filterednames:item.prodName;
+    let i = index" [id]="i" [prodItem]="item">
+    </app-product-item> -->
+  </div>
+</div>
+<app-footer></app-footer>

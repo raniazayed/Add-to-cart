@@ -1,0 +1,19 @@
+
+
+<div class="card mr-2 mb-4 mt-4" style="width: 18rem;">
+    <a [routerLink]="['/item',id]">
+      <img class="card-img-top img-fluid" [src]=prodItem.prodImage alt="Card image cap">
+      <!-- <button (click)="gotoProductDetails('/item',prodItem.id)">Go To Details</button> -->
+    </a> 
+    
+
+    <div class="card-body text-center">
+      <h5 class="card-title">{{prodItem.prodName}}</h5>
+      <p class="card-text">{{prodItem.price}}</p>
+      <p class="card-text">{{prodItem.category}}</p>
+
+      <button  class="btn mr-2" (click)="addtocart(prodItem.prodId,prodItem.price,prodItem.category,prodItem.prodImage,prodItem.prodName)">Add to cart</button>
+      <button  class="btn" (click)="removeItem()">Remove</button>
+
+    </div>
+</div>

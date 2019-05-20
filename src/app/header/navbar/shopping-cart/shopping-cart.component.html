@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row">
+    <div *ngFor="let product of cartprods" class="">
+      <div class="col-lg-6">
+
+        <img class="img-fluid" src={{product.prodImage}} alt="Card image cap" [(ngModel)]="product.prodImage"
+          ngDefaultControl>
+
+      </div>
+      <div class="col-lg-6">
+
+        <h5 class="" [(ngModel)]="product.prodName" ngDefaultControl>
+          {{product.prodName}}
+        </h5>
+        <p class="" [(ngModel)]="product.category" ngDefaultControl>
+          {{product.category}}
+        </p>
+        <p class="" [(ngModel)]="product.price" ngDefaultControl>
+          {{product.price}}
+        </p>
+        <button class="btn" (click)="addtocart(product.prodid)"><i class="fas fa-plus-circle"></i></button>{{product.coun}}
+        <!-- <button (click)=" removeItem()"><i class="fas fa-minus-circle"></i></button>
+        <h2>{{total}}</h2> -->
+      </div>
+    </div>
+    <button  class="btn" type="submit" (click)="checkout()">check out</button>
+
+  </div>
+</div>
+<app-footer></app-footer>
+
+
+
+
